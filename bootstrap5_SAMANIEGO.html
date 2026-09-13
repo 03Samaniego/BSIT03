@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samaniego</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bs-primary: #6610f2;
+        --bs-primary-rgb: 102, 16, 242;
+        --bs-info: #20c997;
+
+        --bs-body-font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .py-6 {
+        padding-top: 6rem !important;
+        padding-bottom: 6rem !important;
+      }
+
+      .hover-lift {
+        transition:
+          transform 0.15s ease-in-out,
+          box-shadow 0.15s ease-in-out;
+      }
+      .hover-lift:hover {
+        transform: translateY(-6px);
+        box-shadow:
+          var(--bs-box-shadow-lg), var(--bs-box-shadow-lg),
+          var(--bs-box-shadow-lg);
+      }
+
+      #features .hover-lift:hover {
+        box-shadow:
+          var(--bs-box-shadow-lg), var(--bs-box-shadow-lg),
+          var(--bs-box-shadow-lg), var(--bs-box-shadow-lg);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body border-bottom sticky-top">
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold text-primary hover-lift d-flex align-items-center"
+          href="#home"
+        >
+          <img
+            src="PlayStation-Logo.wine.png"
+            alt="Playstation+++ logo"
+            height="32"
+            class="me-2"
+          />Playstation+++
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link hover-lift" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover-lift" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover-lift" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover-lift" href="#testimonials"
+                >Testimonials</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover-lift" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item"></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-primary py-6" id="home">
+      <div class="container text-center py-4">
+        <span class="badge rounded-pill text-bg-info mb-3"
+          >Build 5.7893101234</span
+        >
+        <h1 class="text-white fw-bold mb-3">
+          Play Games on the Go, Anywhere You Are
+        </h1>
+        <p class="text-white-50 mb-4 mx-auto" style="max-width: 640px">
+          With the PS+++ Subscription, stream and play your digital library
+          across console, PC, and mobile no downloads, no waiting, just pick up
+          and play.
+        </p>
+        <div class="d-flex justify-content-center gap-2 flex-wrap">
+          <a href="#pricing" class="btn btn-light fw-semibold px-4 hover-lift"
+            >Get Started</a
+          >
+          <a
+            href="#features"
+            class="btn btn-outline-light fw-semibold px-4 hover-lift"
+            >See Features</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <section id="features" class="py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Powerful Features</h2>
+          <p class="text-body-secondary">
+            Everything you need for uninterrupted, cross-platform play.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-3 hover-lift">
+              <div class="card-body">
+                <i
+                  class="bi bi-cloud-arrow-down-fill text-primary fs-2 mb-3 d-block"
+                ></i>
+                <h5 class="card-title fw-bold">Cloud Streaming</h5>
+                <p class="card-text text-body-secondary">
+                  Stream your full game library instantly with no installs,
+                  powered by low-latency cloud servers.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-3 hover-lift">
+              <div class="card-body">
+                <i class="bi bi-controller text-primary fs-2 mb-3 d-block"></i>
+                <h5 class="card-title fw-bold">Cross-Platform Play</h5>
+                <p class="card-text text-body-secondary">
+                  Pick up right where you left off on console, PC, or mobile
+                  with synced save data.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-3 hover-lift">
+              <div class="card-body">
+                <i
+                  class="bi bi-collection-play-fill text-primary fs-2 mb-3 d-block"
+                ></i>
+                <h5 class="card-title fw-bold">Exclusive Game Library</h5>
+                <p class="card-text text-body-secondary">
+                  Get access to a rotating catalog of exclusive titles and early
+                  access betas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Flexible Pricing</h2>
+          <p class="text-body-secondary">
+            Choose the plan that fits how you play.
+          </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm hover-lift">
+              <div class="card-body p-4">
+                <h5 class="fw-bold">Starter</h5>
+                <h2 class="fw-bold my-3">
+                  ₱0.00
+                  <small class="fs-6 fw-normal text-body-secondary">/mo</small>
+                </h2>
+                <ul class="list-unstyled mb-4">
+                  <li class="mb-2">
+                    <i class="bi bi-check-lg text-success me-2"></i>1 Active
+                    Device
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check-lg text-success me-2"></i>Community
+                    Support
+                  </li>
+                  <li class="mb-2 text-body-secondary">
+                    <i class="bi bi-x-lg me-2"></i>Cloud Streaming
+                  </li>
+                </ul>
+                <a
+                  href="#contact"
+                  class="btn btn-outline-primary w-100 hover-lift"
+                  >Sign Up Free</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card h-100 shadow border border-primary border-2 position-relative hover-lift"
+            >
+              <span
+                class="badge bg-primary position-absolute top-0 start-50 translate-middle rounded-pill px-3"
+                >Most Popular</span
+              >
+              <div class="card-body p-4">
+                <h5 class="fw-bold text-primary">PS+++ Premium</h5>
+                <h2 class="fw-bold my-3">
+                  ₱249.00
+                  <small class="fs-6 fw-normal text-body-secondary">/mo</small>
+                </h2>
+                <ul class="list-unstyled mb-4">
+                  <li class="mb-2">
+                    <i class="bi bi-check-lg text-success me-2"></i>Unlimited
+                    Devices
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check-lg text-success me-2"></i>Cloud
+                    Streaming
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check-lg text-success me-2"></i>Priority
+                    Support
+                  </li>
+                </ul>
+                <a href="#contact" class="btn btn-primary w-100 hover-lift"
+                  >Get Started Pro</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm hover-lift">
+              <div class="card-body p-4">
+                <h5 class="fw-bold">Ultimate</h5>
+                <h2 class="fw-bold my-3">
+                  ₱499.00
+                  <small class="fs-6 fw-normal text-body-secondary">/mo</small>
+                </h2>
+                <ul class="list-unstyled mb-4">
+                  <li class="mb-2">
+                    <i class="bi bi-check-lg text-success me-2"></i>Everything
+                    in Premium
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check-lg text-success me-2"></i>4K Streaming
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check-lg text-success me-2"></i>Dedicated
+                    Support Line
+                  </li>
+                </ul>
+                <a
+                  href="#contact"
+                  class="btn btn-outline-primary w-100 hover-lift"
+                  >Contact Sales</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">What Players Say</h2>
+          <p class="text-body-secondary">
+            Real feedback from the PS+++ community.
+          </p>
+        </div>
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+              <p class="fs-5 fst-italic mb-3">
+                "The cloud streaming is seamless &mdash; I switched from console
+                to my phone mid-session without a hitch."
+              </p>
+              <h6 class="fw-bold mb-0">Radahn of the Elden Lands</h6>
+              >
+            </div>
+            <div class="carousel-item">
+              <p class="fs-5 fst-italic mb-3">
+                "Cross-platform saves finally work the way they should. No more
+                losing progress."
+              </p>
+              <h6 class="fw-bold mb-0">Arthur Morgan</h6>
+            </div>
+            <div class="carousel-item">
+              <p class="fs-5 fst-italic mb-3">
+                Arthur! Where are you right now, were gonna rob a bank in
+                lemoyne get over here!
+              </p>
+              <h6 class="fw-bold mb-0">John Marston</h6>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev hover-lift"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon bg-dark rounded-circle p-2"
+              aria-hidden="true"
+            ></span>
+          </button>
+          <button
+            class="carousel-control-next hover-lift"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon bg-dark rounded-circle p-2"
+              aria-hidden="true"
+            ></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5">
+      <div class="container" style="max-width: 640px">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Get In Touch</h2>
+          <p class="text-body-secondary">
+            Fill out the form below to send us a live message.
+          </p>
+        </div>
+        <form id="contactForm" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="firstName" class="form-label">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                name="firstName"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                name="lastName"
+                required
+              />
+            </div>
+            <div class="col-12">
+              <label for="email" class="form-label">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary w-100 hover-lift">
+                Submit Form
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white-50 py-4">
+      <div class="container text-center">
+        <div class="mb-2">
+          <a
+            class="text-white-50 mx-2 hover-lift d-inline-block"
+            href="#"
+            aria-label="Facebook"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a
+            class="text-white-50 mx-2 hover-lift d-inline-block"
+            href="#"
+            aria-label="X"
+            ><i class="bi bi-twitter-x"></i
+          ></a>
+          <a
+            class="text-white-50 mx-2 hover-lift d-inline-block"
+            href="#"
+            aria-label="Discord"
+            ><i class="bi bi-discord"></i
+          ></a>
+        </div>
+        <small>&copy; 2026 Playstation+++. Built with Bootstrap 5.</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
