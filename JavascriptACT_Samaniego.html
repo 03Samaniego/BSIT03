@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Background Color Changer</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: white;
+      transition: background-color 0.5s; /* smooth color change */
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background-color: white;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.8;
+      transform: scale(1.1);
+    }
+
+    #redBtn    { background-color: red; }
+    #greenBtn  { background-color: green; }
+    #blueBtn   { background-color: blue; }
+    #yellowBtn { background-color: gold; color: black; }
+    #randomBtn { background-color: purple; }
+    #resetBtn  { background-color: gray; }
+
+    .info {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .info span {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Background Color Changer</h1>
+    <p>Click a button to change the background color.</p>
+
+    <button id="redBtn" onclick="changeColor('red')">Red</button>
+    <button id="greenBtn" onclick="changeColor('green')">Green</button>
+    <button id="blueBtn" onclick="changeColor('blue')">Blue</button>
+    <button id="yellowBtn" onclick="changeColor('yellow')">Yellow</button>
+    <button id="randomBtn" onclick="randomColor()">Random</button>
+    <button id="resetBtn" onclick="changeColor('white')">Reset</button>
+
+    <div class="info">
+      <p>Current color: <span id="colorName">white</span></p>
+      <p>Times changed: <span id="count">0</span></p>
+    </div>
+  </div>
+
+  <script>
+    // let: value can be updated later
+    let clicks = 0;
+
+    // Changes the background to the color given
+    function changeColor(color) {
+      document.body.style.backgroundColor = color;
+      document.getElementById("colorName").innerText = color;
+
+      clicks += 1; // assignment operator (+=)
+      document.getElementById("count").innerText = clicks;
+    }
+
+    // Picks a random color using numbers and arithmetic operators
+    function randomColor() {
+      const r = Math.floor(Math.random() * 256); // const: cannot be reassigned
+      const g = Math.floor(Math.random() * 256);
+      const b = Math.floor(Math.random() * 256);
+
+      // String data type (joined with +)
+      const color = "rgb(" + r + ", " + g + ", " + b + ")";
+      changeColor(color);
+    }
+  </script>
+
+</body>
+</html>
